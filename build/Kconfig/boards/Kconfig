@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "/home/mec/zephyrproject/zephyr/boards/bbc/microbit_v2/Kconfig"

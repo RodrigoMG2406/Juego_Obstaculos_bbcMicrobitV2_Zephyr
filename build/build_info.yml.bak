@@ -1,0 +1,4 @@
+west:
+  command: /home/mec/zephyrproject/.venv/bin/west build -b bbc_microbit_v2 . --pristine
+  topdir: /home/mec/zephyrproject
+  version: 1.4.0

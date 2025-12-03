@@ -1,0 +1,28 @@
+# --- Zephyr Build Output ---
+# This ignores the entire build directory, which contains binaries,
+# object files, and generated configuration files.
+build/
+twister-out*/
+
+# --- Generated Configuration Files ---
+# Ignore generated files that change on every build/configuration
+# These files should not be committed to source control.
+*.config
+*.dts
+
+# --- West Toolchain/Dependencies (If applicable) ---
+# If your application repository is part of a larger west workspace, 
+# you should ignore the fetched modules, unless you are using a 
+# freestanding application structure.
+.west/
+bootloader/
+modules/
+tools/
+deps/
+
+# --- Temporary/Cache Files ---
+# IDE and other common cache/temporary files
+.vscode/
+.idea/
+*~
+*.swp

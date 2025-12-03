@@ -1,0 +1,64 @@
+cmake:
+  application:
+    configuration-dir: '/home/mec/zephyrproject/Practicas/Juego'
+    source-dir: '/home/mec/zephyrproject/Practicas/Juego'
+  board:
+    name: 'bbc_microbit_v2'
+    path:
+     - '/home/mec/zephyrproject/zephyr/boards/bbc/microbit_v2'
+    qualifiers: 'nrf52833'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/mec/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/mec/zephyrproject/zephyr/boards/bbc/microbit_v2/bbc_microbit_v2.dts'
+     - '/home/mec/zephyrproject/Practicas/Juego/boards/bbc_microbit_v2.overlay'
+    include-dirs:
+     - '/home/mec/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/mec/zephyrproject/modules/hal/atmel/include'
+     - '/home/mec/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/mec/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/mec/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/mec/zephyrproject/modules/hal/microchip/include'
+     - '/home/mec/zephyrproject/modules/hal/microchip/dts'
+     - '/home/mec/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/mec/zephyrproject/modules/hal/nxp/dts'
+     - '/home/mec/zephyrproject/modules/hal/stm32/dts'
+     - '/home/mec/zephyrproject/modules/hal/ti/dts'
+     - '/home/mec/zephyrproject/zephyr/include'
+     - '/home/mec/zephyrproject/zephyr/include/zephyr'
+     - '/home/mec/zephyrproject/zephyr/dts/common'
+     - '/home/mec/zephyrproject/zephyr/dts/vendor'
+     - '/home/mec/zephyrproject/zephyr/dts/rx'
+     - '/home/mec/zephyrproject/zephyr/dts/x86'
+     - '/home/mec/zephyrproject/zephyr/dts/xtensa'
+     - '/home/mec/zephyrproject/zephyr/dts/sparc'
+     - '/home/mec/zephyrproject/zephyr/dts/riscv'
+     - '/home/mec/zephyrproject/zephyr/dts/posix'
+     - '/home/mec/zephyrproject/zephyr/dts/arm64'
+     - '/home/mec/zephyrproject/zephyr/dts/arm'
+     - '/home/mec/zephyrproject/zephyr/dts/arc'
+     - '/home/mec/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/mec/zephyrproject/Practicas/Juego/boards/bbc_microbit_v2.overlay'
+  kconfig:
+    files:
+     - '/home/mec/zephyrproject/zephyr/boards/bbc/microbit_v2/bbc_microbit_v2_defconfig'
+     - '/home/mec/zephyrproject/Practicas/Juego/prj.conf'
+    user-files:
+     - '/home/mec/zephyrproject/Practicas/Juego/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/mec/zephyr-sdk-0.17.4'
+  vendor-specific:
+    nordic:
+      svdfile: '/home/mec/zephyrproject/modules/hal/nordic/nrfx/mdk/nrf52833.svd'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/home/mec/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/mec/zephyrproject/.venv/bin/west build -b bbc_microbit_v2 . --pristine'
+  topdir: '/home/mec/zephyrproject'
+  version: '1.4.0'
