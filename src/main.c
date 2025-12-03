@@ -8,7 +8,6 @@
 // - Al colisionar, se reproduce un sonido, se muestra GAME OVER
 //   y el jugador vuelve automáticamente al centro.
 //
-// Autor: Rodrigo Mecalco
 // Plataforma: Zephyr OS + BBC micro:bit v2
 /////////////////////////////////////////////////////////////////////////////
 
